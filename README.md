@@ -62,11 +62,6 @@ Installation is a quick (I promise!) 3 step process:
 
 Install with this command : `composer require waldo/datatable-bundle`
 
-Generate the assets symlinks : 
-```bash
-php app/console assets:install --symlink web
-```
-
 ### Enable the Bundle
 
 Add the bundle to the `AppKernel.php`
@@ -75,6 +70,10 @@ $bundles = array(
     \\...
     new Waldo\DatatableBundle\WaldoDatatableBundle(),
     )
+```
+Generate the assets symlinks : 
+```bash
+php app/console assets:install --symlink web
 ```
 
 ### Configure the Bundle
